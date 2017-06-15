@@ -16,9 +16,9 @@
         </div>
         <nav>
           <ul>
-            <li>Home</li>
-            <li>Contact</li>
-            <li>Add Item</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="add-item"><label for="modal-1">Add Item</label></a></li>
           </ul>
         </nav>
       </header>
@@ -26,57 +26,85 @@
         <div class="gallery-item">
           <img src="img/21p.jpg" alt="" />
           <div class="content">
-            <h4>Album Name</h4>
-            <h5>Artist Name</h5>
+            <h4>Blurry Face</h4>
+            <h5>Twentyone Pilots</h5>
           </div>
         </div>
         <div class="gallery-item">
           <img src="img/ftp.jpg" alt="" />
           <div class="content">
-            <h4>Album Name</h4>
-            <h5>Artist Name</h5>
+            <h4>Torches</h4>
+            <h5>Foster the People</h5>
           </div>
         </div>
         <div class="gallery-item">
           <img src="img/gl.jpg" alt="" />
           <div class="content">
-            <h4>Album Name</h4>
-            <h5>Artist Name</h5>
+            <h4>Ways to Go</h4>
+            <h5>Grouplove</h5>
           </div>
         </div>
         <div class="gallery-item">
           <img src="img/hnh.jpg" alt="" />
           <div class="content">
-            <h4>Album Name</h4>
-            <h5>Artist Name</h5>
+            <h4>The Head &amp; The Heart</h4>
+            <h5>The Head &amp; The Heart</h5>
           </div>
         </div>
         <div class="gallery-item">
           <img src="img/rhcp.jpg" alt="" />
           <div class="content">
-            <h4>Album Name</h4>
-            <h5>Artist Name</h5>
+            <h4>One Hot Minute</h4>
+            <h5>Red Hot Chili Peppers</h5>
           </div>
         </div>
         <div class="gallery-item">
           <img src="img/sp.jpg" alt="" />
           <div class="content">
-            <h4>Album Name</h4>
-            <h5>Artist Name</h5>
+            <h4>Connect</h4>
+            <h5>Sick Puppies</h5>
           </div>
         </div>
       </section>
       <footer>
         <nav>
           <ul>
-            <li>Home</li>
-            <li>Contact</li>
-            <li>Add Item</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="add-item"><label for="modal-1">Add Item</label></a></li>
           </ul>
         </nav>
         <span>&copy; Krired McMan, 2017</span>
         <!-- Copyright/created by info social media buttons -->
       </footer>
+    </div>
+
+    <div class="modal">
+      <input class="modal-state" id="modal-1" type="checkbox" />
+      <div class="modal-fade-screen">
+        <div class="modal-inner">
+          <div class="modal-close" for="modal-1"></div>
+          <h1>Add an Album!</h1>
+          <p class="modal-intro">In this digital age of music, album art often gets the cold shoulder. This site is a tribute to the those album cover artists who put the albums we love in the perfect wrapping paper. Add your favorite covers and artists below.</p>
+          <form>
+            <div class="form-group">
+              <label for="name">Artist Name:</label>
+              <input id="name" type="text" name="name" placeholder="Queen">
+            </div>
+            <div class="form-group">
+              <label for="title">Album Title:</label>
+              <input id="title" type="text" name="title" placeholder="Greatest Hits">
+            </div>
+            <div class="form-group">
+              <label for="url">Album Art URL:</label>
+              <input id="url" type="text" name="url" placeholder="http://example.com/example.jpg">
+            </div>
+            <div class="button-wrapper">
+              <button type="button" name="button">Submit!</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>

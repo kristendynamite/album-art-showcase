@@ -93,6 +93,178 @@ footer span {
   justify-content: space-between;
 }
 
+.modal h1 {
+  margin-bottom: 10px;
+}
+.modal form .form-group {
+  margin-bottom: 10px;
+}
+.modal form .form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+}
+.modal form .form-group label {
+  display: inline-block;
+  cursor: default;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.modal form .button-wrapper {
+  text-align: center !important;
+}
+.modal form .button-wrapper button {
+  margin-top: 10px;
+  padding: 15px 40px;
+  background: black;
+  border: none;
+  font-size: 18px;
+  color: white;
+  box-shadow: 0 0 2px #333;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.modal form .button-wrapper button:hover {
+  background: white;
+  color: black;
+}
+.modal label {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+.modal label img {
+  border-radius: 150px;
+  display: block;
+  max-width: 300px;
+}
+.modal .modal-state {
+  display: none;
+}
+.modal .modal-trigger {
+  padding: 0.8em 1em;
+}
+.modal .modal-fade-screen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  padding-top: 0.6em;
+  text-align: left;
+  transition: opacity 0.25s ease;
+  visibility: hidden;
+  z-index: 99999999999;
+}
+@media screen and (min-width: 992px) {
+  .modal .modal-fade-screen {
+    padding-top: 10em;
+  }
+}
+.modal .modal-fade-screen .modal-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+.modal .modal-close {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  height: 1.5em;
+  width: 1.5em;
+  background: #F9EAEA;
+  cursor: pointer;
+}
+.modal .modal-close::after, .modal .modal-close::before {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  bottom: 0;
+  left: 50%;
+  height: 1.5em;
+  width: 0.15em;
+  background: #ddd;
+  content: "";
+  display: block;
+  margin: -3px 0 0 -1px;
+  transform: rotate(45deg);
+}
+.modal .modal-close:hover::after, .modal .modal-close:hover::before {
+  background: #c4c4c4;
+}
+.modal .modal-close::before {
+  transform: rotate(-45deg);
+}
+.modal .modal-inner {
+  background: #F9EAEA;
+  border-radius: 3px;
+  margin: auto;
+  margin-top: 0;
+  max-height: 95%;
+  overflow: auto;
+  padding: 1.5em;
+  position: relative;
+  transition: opacity 0.25s ease;
+  width: 95%;
+}
+@media screen and (min-width: 768px) {
+  .modal .modal-inner {
+    max-height: 70%;
+    padding: 3em;
+    width: 60%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .modal .modal-inner {
+    width: 50%;
+  }
+}
+.modal .modal-inner h1 {
+  color: #333;
+  text-align: left;
+  text-transform: capitalize;
+}
+.modal .modal-inner p {
+  color: #333;
+  line-height: 1.5em;
+}
+.modal .modal-inner .modal-intro {
+  margin-bottom: 1em;
+}
+.modal .modal-inner .modal-content {
+  color: #333;
+}
+@media screen and (min-width: 768px) {
+  .modal .modal-inner .modal-content {
+    columns: 2 8em;
+  }
+}
+.modal .modal-inner a.cta {
+  color: #fff;
+  display: inline-block;
+  margin-right: 0.5em;
+  margin-top: 1em;
+}
+.modal .modal-inner a.cta:last-child {
+  padding: 0 2em;
+}
+.modal .modal-state:checked + .modal-fade-screen {
+  opacity: 1;
+  visibility: visible;
+}
+.modal .modal-state:checked + .modal-fade-screen .modal-inner {
+  top: 0.5em;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
 header {
   border: 1px dashed black;
   width: 80%;
