@@ -1,0 +1,10 @@
+nav {
+  height: 50px;
+  ul {
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
