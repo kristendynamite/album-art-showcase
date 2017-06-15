@@ -31,6 +31,10 @@ header {
       color:darken($off-white, 10%);
     }
 
+    label {
+      cursor: pointer;
+    }
+
     @include tablet-bp {
       display: inline-block;
     }

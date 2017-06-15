@@ -2,6 +2,8 @@
   width: 50px;
   height: 35px;
   position: relative;
+  transform: scale(.5);
+  cursor: pointer;
 
   @include tablet-bp {
     display: none;

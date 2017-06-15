@@ -29,6 +29,7 @@ $(document).ready(function() {
     e.stopPropagation();
   });
 
+  //hamburger icon scripts
   var expanded = false;
   $('.burger').click(function() {
     if (!expanded) {
@@ -37,7 +38,6 @@ $(document).ready(function() {
       $('.burger span:first-child').addClass('toggle-top');
       $('.burger span:last-child').addClass('toggle-bottom');
       $('.burger span:nth-child(2)').addClass('middle');
-
       expanded = true;
     } else {
       $('.burger span:nth-child(2)').removeClass('middle');

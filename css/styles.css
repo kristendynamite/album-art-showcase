@@ -76,15 +76,8 @@ h2, h3, h4, h5, h6 {
 }
 
 footer {
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  margin-top: 30px;
-}
-footer span {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  background-color: #F9EAEA;
+  border-top: dotted 2px #eec2c2;
 }
 
 .container {
@@ -269,6 +262,8 @@ footer span {
   width: 50px;
   height: 35px;
   position: relative;
+  transform: scale(0.5);
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .burger {
@@ -398,6 +393,9 @@ header a:hover {
   background: black;
   color: #eec2c2;
 }
+header a label {
+  cursor: pointer;
+}
 @media screen and (min-width: 768px) {
   header a {
     display: inline-block;
@@ -436,6 +434,42 @@ nav ul {
 @media screen and (min-width: 768px) {
   nav ul {
     flex-direction: row;
+  }
+}
+nav ul a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  line-height: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+nav ul a:hover {
+  color: #eec2c2;
+}
+nav ul a label {
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  min-height: 180px;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    min-height: 140px;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer {
+    min-height: 120px;
   }
 }
 

@@ -2,7 +2,8 @@ nav {
   height: 90px;
   @include tablet-bp {
     height: 50px;
-  };
+  }
+
   ul {
     height: 100%;
     list-style-type: none;
@@ -12,6 +13,23 @@ nav {
     flex-direction: column;
     @include tablet-bp {
       flex-direction: row;
-    };
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      color: black;
+      line-height: 20px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      display: inline-block;
+      &:hover {
+        color:darken($off-white, 10%);
+      }
+
+      label {
+        cursor: pointer;
+      }
+    }
   }
 }
