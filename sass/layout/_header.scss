@@ -1,20 +1,52 @@
 header {
-  border: 1px dashed black; //remove later
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px dotted darken($off-white, 10%);
 
-  width: 80%;
-  height: 190px;
-  @include tablet-bp {
-    height: 150px;
-  }
-  margin: 0 auto;
 
-  .hero {
-    margin: auto;
-    width: 100%;
-    height: 100px;
-    border-bottom: 1px dashed black;
+  .logo {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+
+    img {
+      margin-right: 10px;
+      @include size(50px);
+    }
+  }
+
+  a {
+    display: none;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    line-height: 20px;
+    padding: 30px;
+    font-weight: 700;
+    &:hover {
+      background: black;
+      color:darken($off-white, 10%);
+    }
+
+    @include tablet-bp {
+      display: inline-block;
+    }
+  }
+
+  i {
+    font-size: 30px !important;
+    cursor: pointer;
+    display: none !important;
+
+    &:hover {
+      color: #fa7f7a;
+    }
+
+    @include tablet-bp {
+      display: inline-block !important;
+    }
   }
 }
