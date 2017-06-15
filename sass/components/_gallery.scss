@@ -1,6 +1,7 @@
 #gallery {
   width: 80%;
   margin: 0 auto;
+  flex: 1;
   @include grid-container;
 
   .gallery-item {

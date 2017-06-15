@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+html, body, .container {
+  height: 100%;
+}
+
 body {
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -25,6 +29,7 @@ h2, h3, h4, h5, h6 {
 #gallery {
   width: 80%;
   margin: 0 auto;
+  flex: 1;
 }
 #gallery::after {
   clear: both;
@@ -68,6 +73,24 @@ h2, h3, h4, h5, h6 {
   width: 100%;
   transition: bottom .7s ease;
   background-color: rgba(169, 169, 169, 0.7);
+}
+
+footer {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 30px;
+}
+footer span {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 header {
