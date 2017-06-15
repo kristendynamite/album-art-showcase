@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAQA,IAAK;ECmCD,MAAM,EAPG,IAAc;EAavB,KAAK,EAhBE,IAAM",
-"sources": ["../sass/styles.scss","../sass/layout/bourbon/addons/_size.scss"],
+"mappings": "AAAA,IAAK;EACH,WAAW,ECME,6BAA6B;;;ADH5C,EAAG;EACD,WAAW,ECGC,wBAAwB;;;ADAtC,kBAAmB;EACjB,WAAW,ECHM,kBAAkB",
+"sources": ["../sass/base/_typography.scss","../sass/abstracts/_variables.scss"],
 "names": [],
 "file": "styles.css"
 }
