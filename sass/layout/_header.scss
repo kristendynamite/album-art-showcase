@@ -25,6 +25,11 @@ header {
     img {
       margin-right: 10px;
       @include size(50px);
+      cursor: pointer;
+
+      &:hover {
+        animation: vinyl-rotate 1s infinite linear;
+      }
     }
   }
 
@@ -63,5 +68,14 @@ header {
     @include tablet-bp {
       display: inline-block !important;
     }
+  }
+}
+
+@keyframes vinyl-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
