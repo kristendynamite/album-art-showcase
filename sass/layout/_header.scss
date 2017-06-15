@@ -2,7 +2,10 @@ header {
   border: 1px dashed black; //remove later
 
   width: 80%;
-  height: 150px;
+  height: 190px;
+  @include tablet-bp {
+    height: 150px;
+  }
   margin: 0 auto;
 
   .hero {

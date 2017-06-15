@@ -1,10 +1,17 @@
 nav {
-  height: 50px;
+  height: 90px;
+  @include tablet-bp {
+    height: 50px;
+  };
   ul {
     height: 100%;
     list-style-type: none;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-direction: column;
+    @include tablet-bp {
+      flex-direction: row;
+    };
   }
 }

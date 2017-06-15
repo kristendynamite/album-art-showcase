@@ -25,8 +25,13 @@ h2, h3, h4, h5, h6 {
 header {
   border: 1px dashed black;
   width: 80%;
-  height: 150px;
+  height: 190px;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  header {
+    height: 150px;
+  }
 }
 header .hero {
   margin: auto;
@@ -39,7 +44,12 @@ header .hero {
 }
 
 nav {
-  height: 50px;
+  height: 90px;
+}
+@media screen and (min-width: 768px) {
+  nav {
+    height: 50px;
+  }
 }
 nav ul {
   height: 100%;
@@ -47,6 +57,12 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
