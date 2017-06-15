@@ -23,6 +23,7 @@ nav {
       font-weight: 700;
       margin-bottom: 15px;
       display: inline-block;
+      cursor: pointer;
       &:hover {
         color:darken($off-white, 10%);
       }

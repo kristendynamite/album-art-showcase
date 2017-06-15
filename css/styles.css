@@ -390,6 +390,15 @@ header .logo {
   justify-content: space-between;
   align-items: center;
 }
+header .logo h1 {
+  position: relative;
+  cursor: pointer;
+}
+header .logo h1:hover {
+  background: -webkit-linear-gradient(-45deg, #32fcfc 0%, #32fcfc 15%, #6bce29 16%, #6bce29 28%, #f2da00 29%, #f2da00 49%, #ed4cff 51%, #ed4cff 66%, #ed4cff 66%, #edb23d 67%, #edb23d 81%, #01C4BD 82%, #01C4BD 100%);
+  -webkit-text-stroke: 3.5px rgba(255, 255, 255, 0.01);
+  -webkit-background-clip: text;
+}
 header .logo img {
   margin-right: 10px;
   height: 50px;
@@ -403,6 +412,7 @@ header a {
   line-height: 20px;
   padding: 30px;
   font-weight: 700;
+  cursor: pointer;
 }
 header a:hover {
   background: black;
@@ -459,6 +469,7 @@ nav ul a {
   font-weight: 700;
   margin-bottom: 15px;
   display: inline-block;
+  cursor: pointer;
 }
 nav ul a:hover {
   color: #eec2c2;
