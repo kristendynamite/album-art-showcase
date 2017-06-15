@@ -22,6 +22,54 @@ h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
 }
 
+#gallery {
+  width: 80%;
+  margin: 0 auto;
+}
+#gallery::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+#gallery .gallery-item {
+  overflow: hidden;
+  position: relative;
+  margin-top: 30px;
+  border: 1px solid lightgrey;
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  #gallery .gallery-item {
+    width: calc(50% - 30px);
+    float: left;
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #gallery .gallery-item {
+    width: calc(33.33333% - 26.66667px);
+    float: left;
+    margin-left: 20px;
+  }
+}
+#gallery .gallery-item img {
+  width: 100%;
+}
+#gallery .gallery-item img:hover + .content {
+  bottom: 0px;
+}
+#gallery .gallery-item .content {
+  position: absolute;
+  padding: 10px;
+  bottom: -120px;
+  left: 0;
+  width: 100%;
+  transition: bottom .7s ease;
+  background-color: rgba(169, 169, 169, 0.7);
+}
+
 header {
   border: 1px dashed black;
   width: 80%;
