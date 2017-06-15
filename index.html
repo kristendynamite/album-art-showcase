@@ -27,48 +27,6 @@
         </div>
       </header>
       <section id="gallery">
-        <div class="gallery-item">
-          <img src="img/21p.jpg" alt="" />
-          <div class="content">
-            <h4>Blurry Face</h4>
-            <h5>Twentyone Pilots</h5>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="img/ftp.jpg" alt="" />
-          <div class="content">
-            <h4>Torches</h4>
-            <h5>Foster the People</h5>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="img/gl.jpg" alt="" />
-          <div class="content">
-            <h4>Ways to Go</h4>
-            <h5>Grouplove</h5>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="img/hnh.jpg" alt="" />
-          <div class="content">
-            <h4>The Head &amp; The Heart</h4>
-            <h5>The Head &amp; The Heart</h5>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="img/rhcp.jpg" alt="" />
-          <div class="content">
-            <h4>One Hot Minute</h4>
-            <h5>Red Hot Chili Peppers</h5>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="img/sp.jpg" alt="" />
-          <div class="content">
-            <h4>Connect</h4>
-            <h5>Sick Puppies</h5>
-          </div>
-        </div>
       </section>
       <footer>
         <nav>
@@ -79,7 +37,6 @@
           </ul>
         </nav>
         <span>&copy; Krired McMan, 2017</span>
-        <!-- Copyright/created by info social media buttons -->
       </footer>
     </div>
 
@@ -90,7 +47,7 @@
           <div class="modal-close" for="modal-1"></div>
           <h1>Add an Album!</h1>
           <p class="modal-intro">In this digital age of music, album art often gets the cold shoulder. This site is a tribute to the those album cover artists who put the albums we love in the perfect wrapping paper. Add your favorite covers and artists below.</p>
-          <form>
+          <form id="new-album">
             <div class="form-group">
               <label for="name">Artist Name:</label>
               <input id="name" type="text" name="name" placeholder="Queen">
@@ -104,7 +61,7 @@
               <input id="url" type="text" name="url" placeholder="http://example.com/example.jpg">
             </div>
             <div class="button-wrapper">
-              <button type="button" name="button">Submit!</button>
+              <button type="submit" for="new-album" name="button">Submit!</button>
             </div>
           </form>
         </div>
