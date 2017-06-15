@@ -1,14 +1,18 @@
 #gallery {
   width: 80%;
-  margin: 0 auto;
+  margin: 30px auto 0;
   flex: 1;
   @include grid-container;
+
+
 
   .gallery-item {
     overflow: hidden;
     position: relative;
     margin-top: 30px;
     border: 1px solid lightgrey;
+
+    animation: spin 1.5s ease-in-out forwards;
 
     @include grid-column(12);
 
@@ -22,6 +26,7 @@
 
     img {
       width: 100%;
+      display: block;
 
       &:hover + .content {
         bottom: 0px;
@@ -31,11 +36,25 @@
     .content {
       position: absolute;
       padding: 10px;
-      bottom: -120px;
+      bottom: 0px;
       left: 0;
       width: 100%;
       transition: bottom .7s ease;
-      background-color: rgba(#A9A9A9, 0.7%);
+      background-color: rgba(darken($off-white, 30%), 0.9);
+
+      @include desktop-bp {
+        bottom: -120px;
+      }
     }
+  }
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(735deg);
   }
 }

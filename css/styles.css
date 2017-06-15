@@ -28,7 +28,7 @@ h2, h3, h4, h5, h6 {
 
 #gallery {
   width: 80%;
-  margin: 0 auto;
+  margin: 30px auto 0;
   flex: 1;
 }
 #gallery::after {
@@ -41,6 +41,7 @@ h2, h3, h4, h5, h6 {
   position: relative;
   margin-top: 30px;
   border: 1px solid lightgrey;
+  animation: spin 1.5s ease-in-out forwards;
   width: calc(100% - 40px);
   float: left;
   margin-left: 20px;
@@ -61,6 +62,7 @@ h2, h3, h4, h5, h6 {
 }
 #gallery .gallery-item img {
   width: 100%;
+  display: block;
 }
 #gallery .gallery-item img:hover + .content {
   bottom: 0px;
@@ -68,13 +70,26 @@ h2, h3, h4, h5, h6 {
 #gallery .gallery-item .content {
   position: absolute;
   padding: 10px;
-  bottom: -120px;
+  bottom: 0px;
   left: 0;
   width: 100%;
   transition: bottom .7s ease;
-  background-color: rgba(169, 169, 169, 0.7);
+  background-color: rgba(215, 115, 115, 0.9);
+}
+@media screen and (min-width: 992px) {
+  #gallery .gallery-item .content {
+    bottom: -120px;
+  }
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(735deg);
+  }
+}
 footer {
   background-color: #F9EAEA;
   border-top: dotted 2px #eec2c2;

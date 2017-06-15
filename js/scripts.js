@@ -83,7 +83,7 @@ $(document).ready(function() {
       '</div>' +
       '</div>');
     });
-    fixGalleryHeight();
+    // fixGalleryHeight();
   }
 
   //on form submit, run method that creates album, then append to page
@@ -103,7 +103,7 @@ $(document).ready(function() {
 
   //fix gallery item height hack event listener
   $(window).on('resize', function() {
-    fixGalleryHeight();
+    // fixGalleryHeight();
   });
 
   // modal scripts
