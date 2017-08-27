@@ -5,6 +5,10 @@
 
 ![portfolio-4](https://user-images.githubusercontent.com/27696622/29746846-1b3a9d52-8a9c-11e7-8793-4ee8dc35bcd9.png)
 
+Add album modal:
+
+![album-art-modal](https://user-images.githubusercontent.com/27696622/29747151-bf71af3e-8aa4-11e7-948a-2d6fdc9c6fbe.png)
+
 ### Description
 
 This app allows users to showcase album artwork for their favorite albums. It was created using HTML, CSS, Javascript, and JQuery 
